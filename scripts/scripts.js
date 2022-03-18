@@ -15,13 +15,9 @@ function updateCountdowntime() {
   const m = Math.floor(diff / (1000 * 60)) % 60;
   const s = Math.floor(diff / 1000) % 60;
   days.innerText = d < 10 ? "0" + d : d;
-  days.innerText = d < 0 ? "00" : d;
   hours.innerText = h < 10 ? "0" + h : h;
-  hours.innerText = h < 0 ? "00" : h;
   minutes.innerText = m < 10 ? "0" + m : m;
-  minutes.innerText = m < 0 ? "00" : m;
   seconds.innerText = s < 10 ? "0" + s : s;
-  seconds.innerText = s < 0 ? "00" : s;
   console.log(d, h, m, s);
 }
 

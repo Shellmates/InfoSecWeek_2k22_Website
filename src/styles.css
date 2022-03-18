@@ -5,10 +5,12 @@
 
 .countdown-about {
   background: linear-gradient(180deg, #010103 0%, #00172a 100%);
-  font-size: 1rem;
-  width: 100%;
 }
 
 .countdown {
   font-family: "Righteous", cursive;
+}
+
+.about {
+  font-family: "Raleway", cursive;
 }
