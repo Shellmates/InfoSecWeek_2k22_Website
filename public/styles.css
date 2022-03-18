@@ -488,6 +488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(5px + .3vw);
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .ml-\[20px\]{
   margin-left: 20px;
 }
@@ -590,11 +594,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 28px;
 }
 
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-\[calc\(28px\+1\.3vw\)\]{
   font-size: calc(28px + 1.3vw);
 }
@@ -619,10 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
 .leading-\[1\.25\]{
   line-height: 1.25;
 }
@@ -631,19 +626,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.025em;
 }
 
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .test {
@@ -695,7 +680,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   .shadow-top-down::after {
     content: "";
     position: absolute;
-    width: 98.65%;
+    width: 98%;
     height: 100px;
     left: 0;
     background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
