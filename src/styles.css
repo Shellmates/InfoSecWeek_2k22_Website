@@ -1,7 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .test {
-    font-size: 10px;
+  font-size: 10px;
 }
+.bg-midnight {
+  background-color: var(--background-color);
+}
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.font-righteous {
+  font-family: "Righteous", cursive;
+}
+
+/* speakers section  */
+.speakers {
+  --background-color: #00172a;
+}
+.speakers-title::before,
+.speakers-title::after {
+  content: "";
+  position: absolute;
+  transform: skew(-45deg);
+  width: 180%;
+  height: 95%;
+  z-index: -1;
+}
+.speakers-title::before {
+  background-color: #a3770da6;
+  top: 15%;
+  left: -50%;
+}
+.speakers-title::after {
+  background-color: #ffffff33;
+  left: -35%;
+  top: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  .shadow-top-down::before,
+  .shadow-top-down::after {
+    content: "";
+    position: absolute;
+    width: 98.65%;
+    height: 100px;
+    left: 0;
+    background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
+  }
+  .shadow-top-down::before {
+    top: 8px;
+  }
+  .shadow-top-down::after {
+    bottom: -35px;
+  }
+}
+
+.speakers-list {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.speakers-list .speaker {
+  scroll-snap-align: center;
+}
+
+.speakers-list::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(196, 196, 196, 0.05);
+
+  border-radius: 10px;
+}
+
+.speakers-list::-webkit-scrollbar-thumb {
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .speaker:nth-child(even) .speaker-info {
+    order: 2;
+    margin-right: 3rem;
+  }
+
+  .speaker:nth-child(even) .speaker-img {
+    order: 1;
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+}
+
+/* end of speakers section */
