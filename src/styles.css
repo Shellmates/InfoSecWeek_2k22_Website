@@ -10,14 +10,13 @@
 
 .countdown {
   font-family: "Righteous", cursive;
+  padding-top: 30px;
 }
 
 .about {
   font-family: "Raleway", cursive;
 }
-.test {
-  font-size: 10px;
-}
+
 .bg-midnight {
   background-color: var(--background-color);
 }
