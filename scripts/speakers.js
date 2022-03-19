@@ -1,64 +1,62 @@
 const speakers = [
-    {
-        id : 1,
-        name : "Marouane Benbetka" , 
-        profession : "Computer Systems Engineer, with A Keen Interest In Security" , 
-        img_url : "./assets/logo/Vector-1.svg" , 
-        activity : "Conference: Lock Picking 101" ,
-        facebook : "#" , 
-        linkedIn : "#" ,
-        twitter : "#" , 
-    } ,
-    {
-        id : 2,
-        name : "Hania Mennad" , 
-        profession : "Computer Systems Engineer, with A Keen Interest In Security" , 
-        img_url : "./assets/logo/Vector-1.svg" , 
-        activity : "Conference: Lock Picking 101" ,
-        facebook : "#" , 
-        linkedIn : "#" ,
-        twitter : "#" , 
-    } ,
-    {
-        id : 3,
-        name : "Walid Berrouk" , 
-        profession : "Computer Systems Engineer, with A Keen Interest In Security" , 
-        img_url : "./assets/logo/Vector-1.svg" , 
-        activity : "Conference: Lock Picking 101" ,
-        facebook : "#" , 
-        linkedIn : "#" ,
-        twitter : "#" , 
-    } ,
-    {
-        id : 4,
-        name : "Sami Bouchebout" , 
-        profession : "Computer Systems Engineer, with A Keen Interest In Security" , 
-        img_url : "./assets/logo/Vector-1.svg" , 
-        activity : "Conference: Lock Picking 101" ,
-        facebook : "#" , 
-        linkedIn : "#" ,
-        twitter : "#" , 
-    } ,
-    {
-        id : 5,
-        name : "balaaa blaaaaaaa" , 
-        profession : "Computer Systems Engineer, with A Keen Interest In Security" , 
-        img_url : "./assets/logo/Vector-1.svg" , 
-        activity : "Conference: Lock Picking 101" ,
-        facebook : "#" , 
-        linkedIn : "#" ,
-        twitter : "#" , 
-    } ,
-] ; 
+  {
+    id: 1,
+    name: "Marouane Benbetka",
+    profession: "Computer Systems Engineer, with A Keen Interest In Security",
+    img_url: "./assets/logo/Vector-1.svg",
+    activity: "Conference: Lock Picking 101",
+    facebook: "#",
+    linkedIn: "#",
+    twitter: "#",
+  },
+  {
+    id: 2,
+    name: "Hania Mennad",
+    profession: "Computer Systems Engineer, with A Keen Interest In Security",
+    img_url: "./assets/logo/Vector-1.svg",
+    activity: "Conference: Lock Picking 101",
+    facebook: "#",
+    linkedIn: "#",
+    twitter: "#",
+  },
+  {
+    id: 3,
+    name: "Walid Berrouk",
+    profession: "Computer Systems Engineer, with A Keen Interest In Security",
+    img_url: "./assets/logo/Vector-1.svg",
+    activity: "Conference: Lock Picking 101",
+    facebook: "#",
+    linkedIn: "#",
+    twitter: "#",
+  },
+  {
+    id: 4,
+    name: "Sami Bouchbout",
+    profession: "Computer Systems Engineer, with A Keen Interest In Security",
+    img_url: "./assets/logo/Vector-1.svg",
+    activity: "Conference: Lock Picking 101",
+    facebook: "#",
+    linkedIn: "#",
+    twitter: "#",
+  },
+  {
+    id: 5,
+    name: "balaaa blaaaaaaa",
+    profession: "Computer Systems Engineer, with A Keen Interest In Security",
+    img_url: "./assets/logo/Vector-1.svg",
+    activity: "Conference: Lock Picking 101",
+    facebook: "#",
+    linkedIn: "#",
+    twitter: "#",
+  },
+];
 
+document.getElementById("speakers-list").innerHTML = `
 
-
-document.getElementById("speakers-list").innerHTML = 
-`
-
-${
-    speakers.map( speaker => (
-        `<div
+${speakers
+  .map(
+    (speaker) =>
+      `<div
             class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0" key=${speaker.id}
         >
             <div class="speaker-info font-raleway text-white mb-5">
@@ -107,9 +105,7 @@ ${
             />
         </div>
     </div>`
-    )).join('')
-}
+  )
+  .join("")}
 
-`
-
-
+`;
