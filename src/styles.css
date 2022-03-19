@@ -31,23 +31,42 @@
   position: absolute;
   transform: skew(-45deg);
   width: 100%;
-  height: 110%;
+  height: 100%;
   z-index: -1;
 }
 .agenda-title::before {
   background-color: #a3770da6;
   top: 15%;
-  right: 7%;
+  right: 6%;
+
 }
 .agenda-title::after {
   background-color: #ffffff33;
-  right: 0%;
-  top: -2px;
+  right: -3%;
+  top: -3.5px;
 }
 
 .agenda-btn-pressed {
-  background-color: #a3770d;
-  color: #00172a;
+    background-color: #A3770D;
+    color: #00172A;
+} 
+@media screen and (min-width: 600px) {
+    .agenda-btns  {
+        margin-right:7%;
+        margin-left: 7%; 
+    }
+}
+@media screen and (max-width: 642px){
+    .agenda-btns {
+        margin-right:40px;
+        margin-left: 40px; 
+    }
+}
+@media screen and (max-width: 500px) {
+    .agenda Button {
+        padding-right:20px;
+        padding-left: 20px; 
+    }
 }
 
 /*end of agenda section */
@@ -65,9 +84,6 @@
   font-family: "Raleway", cursive;
 }
 
-.bg-midnight {
-  background-color: var(--background-color);
-}
 
 .contact-form {
   background: #00172a;
@@ -107,79 +123,79 @@
 
 /* speakers section  */
 .speakers {
-  --background-color: #00172a;
-}
-.speakers-title::before,
-.speakers-title::after {
-  content: "";
-  position: absolute;
-  transform: skew(-45deg);
-  width: 180%;
-  height: 95%;
-  z-index: -1;
-}
-.speakers-title::before {
-  background-color: #a3770da6;
-  top: 15%;
-  left: -50%;
-}
-.speakers-title::after {
-  background-color: #ffffff33;
-  left: -35%;
-  top: -2px;
-}
-
-@media screen and (min-width: 768px) {
-  .shadow-top-down::before,
-  .shadow-top-down::after {
+    --background-color: #00172a;
+  }
+  .speakers-title::before,
+  .speakers-title::after {
     content: "";
     position: absolute;
-    width: 98%;
-    height: 100px;
-    left: 0;
-    background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
+    transform: skew(-45deg);
+    width: 180%;
+    height: 95%;
+    z-index: -1;
   }
-  .shadow-top-down::before {
-    top: 8px;
+  .speakers-title::before {
+    background-color: #a3770da6;
+    top: 15%;
+    left: -50%;
   }
-  .shadow-top-down::after {
-    bottom: -35px;
+  .speakers-title::after {
+    background-color: #ffffff33;
+    left: -35%;
+    top: -2px;
   }
-}
-
-.speakers-list {
-  overflow: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-.speakers-list .speaker {
-  scroll-snap-align: center;
-}
-
-.speakers-list::-webkit-scrollbar {
-  width: 10px;
-  background: rgba(196, 196, 196, 0.05);
-
-  border-radius: 10px;
-}
-
-.speakers-list::-webkit-scrollbar-thumb {
-  background: rgba(196, 196, 196, 0.45);
-  border-radius: 10px;
-  padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .speaker:nth-child(even) .speaker-info {
-    order: 2;
-    margin-right: 3rem;
+  
+  @media screen and (min-width: 768px) {
+    .shadow-top-down::before,
+    .shadow-top-down::after {
+      content: "";
+      position: absolute;
+      width: 98%;
+      height: 100px;
+      left: 0;
+      background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
+    }
+    .shadow-top-down::before {
+      top: 8px;
+    }
+    .shadow-top-down::after {
+      bottom: -35px;
+    }
   }
-
-  .speaker:nth-child(even) .speaker-img {
-    order: 1;
-    margin-left: 0;
-    margin-right: 2rem;
+  
+  .speakers-list {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
-}
-
-/* end of speakers section */
+  .speakers-list .speaker {
+    scroll-snap-align: center;
+  }
+  
+  .speakers-list::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(196, 196, 196, 0.05);
+  
+    border-radius: 10px;
+  }
+  
+  .speakers-list::-webkit-scrollbar-thumb {
+    background: rgba(196, 196, 196, 0.45);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .speaker:nth-child(even) .speaker-info {
+      order: 2;
+      margin-right: 3rem;
+    }
+  
+    .speaker:nth-child(even) .speaker-img {
+      order: 1;
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
+  
+  /* end of speakers section */
