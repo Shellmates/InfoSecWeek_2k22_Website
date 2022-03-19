@@ -20,6 +20,31 @@
 .bg-midnight {
   background-color: var(--background-color);
 }
+
+.contact-form {
+  background: #00172a;
+}
+
+.name-form,
+.email-form {
+  width: 45%;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.subject-form,
+.message-form {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.submit-form {
+  background-color: #a3770da6;
+  color: #00172a;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+
 .font-raleway {
   font-family: "Raleway", sans-serif;
 }

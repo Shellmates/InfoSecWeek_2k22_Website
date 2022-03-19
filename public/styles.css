@@ -537,14 +537,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .inline-block{
   display: inline-block;
 }
@@ -561,12 +553,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 16rem;
 }
 
-.max-h-\[530px\]{
-  max-height: 530px;
+.h-10{
+  height: 2.5rem;
 }
 
-.max-h-\[700px\]{
-  max-height: 700px;
+.h-32{
+  height: 8rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .max-h-\[570px\]{
@@ -593,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: calc(200px + 4vw);
 }
 
+.w-1\/5{
+  width: 20%;
+}
+
 .max-w-\[30ch\]{
   max-width: 30ch;
 }
@@ -613,12 +613,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
 .self-center{
   align-self: center;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
 .object-cover{
@@ -630,6 +642,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
+.p-16{
+  padding: 4rem;
+}
+
 .py-\[28px\]{
   padding-top: 28px;
   padding-bottom: 28px;
@@ -639,8 +655,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
 }
 
 .text-center{
@@ -709,6 +733,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-midnight {
   background-color: var(--background-color);
+}
+
+.contact-form {
+  background: #00172a;
+}
+
+.name-form,
+.email-form {
+  width: 45%;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.subject-form,
+.message-form {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.submit-form {
+  background-color: #a3770da6;
+  color: #00172a;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
 }
 
 .font-raleway {
@@ -843,6 +891,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-10{
     width: 2.5rem;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:items-center{

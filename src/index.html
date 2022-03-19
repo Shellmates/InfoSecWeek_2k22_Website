@@ -54,7 +54,7 @@
     <!-- END COUNTDOWN -->
 
     <!-- Speakers section -->
-    <section class="speakers w-full h-full bg-midnight overflow-hidden pb-20">
+    <section class="speakers w-full h-full bg-midnight overflow-hidden pb-16">
       <div class="flex items-center p-10 flex-col isolate ">
         <p
           class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-10"
@@ -124,6 +124,24 @@
       </div>
     </section>
     <!-- END SPEAKERS -->
+    <!-- Contact Form -->
+    <div class="contact-form w-full h-full overflow-hidden flex items-center p-16 flex-col isolate">
+        <p
+          class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-16"
+        >
+          Contact
+        </p>
+        <form class="flex flex-col gap-7 w-3/4 mb-10 items-center">
+          <div class="name-email flex md:flex-row flex-col justify-between h-10 w-full">
+            <input type="text" name="name" placeholder="Your name" class="name-form pl-5">
+            <input type="email" name="mail" placeholder="Your email" class="email-form pl-5">
+          </div>
+          <input type="text" name="subject" class="subject-form h-10 pl-5 w-full" placeholder="Subject">
+          <textarea name="message" class="message-form h-32 pl-5 pt-2 w-full mb-6" placeholder="Message"></textarea>
+          <button type="submit" class="submit-form w-1/5 h-8 rounded-2xl">Send</button>
+        </form>
+        <!-- END CONTACT FORM -->
+    </div>
   </body>
   <script src="/scripts/Countdown.js"></script>
   <script src="/scripts/speakers.js"></script>
