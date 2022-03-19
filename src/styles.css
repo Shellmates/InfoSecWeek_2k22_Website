@@ -25,13 +25,14 @@
   background: #00172a;
 }
 
-.name-form,
-.email-form {
-  width: 45%;
-  border: 1px solid white;
-  background-color: transparent;
+@media (min-width: 768px) {
+  .md\:w-45\/100 {
+    width: 45%;
+  }
 }
 
+.name-form,
+.email-form,
 .subject-form,
 .message-form {
   border: 1px solid white;
