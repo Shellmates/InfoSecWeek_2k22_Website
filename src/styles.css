@@ -4,16 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-color: #00172a;
-  --bakground-dark-yellow: #a3770d;
-}
-
 .bg-midnight {
   background-color: var(--background-color);
-}
-.bg-dark-yellow {
-  background-color: var(--bakground-dark-yellow);
 }
 
 .font-raleway {
@@ -73,8 +65,50 @@
   font-family: "Raleway", cursive;
 }
 
-/* speakers section  */
+.bg-midnight {
+  background-color: var(--background-color);
+}
 
+.contact-form {
+  background: #00172a;
+}
+
+@media (min-width: 768px) {
+  .md\:w-45\/100 {
+    width: 48%;
+  }
+}
+
+.name-form,
+.email-form,
+.subject-form,
+.message-form {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.submit-form {
+  background-color: #a3770da6;
+  color: #00172a;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #00172a;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.font-righteous {
+  font-family: "Righteous", cursive;
+}
+
+/* speakers section  */
+.speakers {
+  --background-color: #00172a;
+}
 .speakers-title::before,
 .speakers-title::after {
   content: "";
