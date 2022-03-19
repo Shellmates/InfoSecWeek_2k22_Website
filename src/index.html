@@ -8,48 +8,6 @@
     <title>InfoSec Week Website</title>
   </head>
   <body>
-    <div class="countdown-about w-screen h-screen text-white">
-      <div class="countdown flex flex-row justify-center mb-32 mobile:mb-10">
-        <div
-          class="daysC mr-36 flex flex-col justify-center align-center text-center mobile:mr-5"
-        >
-          <p class="daysTXT text-7xl mb-3.5 mobile:text-xl">00</p>
-          <p class="text-3xl mobile:text-lg">Days</p>
-        </div>
-        <div
-          class="hoursC mr-36 flex flex-col justify-center align-center text-center mobile:mr-5"
-        >
-          <p class="hoursTXT text-7xl mb-3.5 mobile:text-xl">00</p>
-          <p class="text-3xl mobile:text-lg">Hours</p>
-        </div>
-        <div
-          class="minutesC mr-36 flex flex-col justify-center align-center text-center mobile:mr-5"
-        >
-          <p class="minutesTXT text-7xl mb-3.5 mobile:text-xl">00</p>
-          <p class="text-3xl mobile:text-lg">Minutes</p>
-        </div>
-        <div
-          class="secondsC mr- flex flex-col justify-center align-center text-center mobile:mr-5"
-        >
-          <p class="secondsTXT text-7xl mb-3.5 mobile:text-xl">00</p>
-          <p class="text-3xl mobile:text-lg">Seconds</p>
-        </div>
-      </div>
-      <div class="about text-center">
-        <p class="mb-10 text-3xl mobile:text-xs">
-          InfoSec Week is an online event dedicated to cybersecurity, it’s the
-          <br />
-          best way to dive deeper into it and to discover its world!
-        </p>
-        <p class="text-3xl mb-32 mobile:text-xs">
-          For 5 days, participants will get to attend conferences and workshops
-          <br />
-          in several areas of cybersecurity to learn more and enhance their
-          <br />
-          knowledge!
-        </p>
-      </div>
-    </div>
 
     <!-- Speakers Section -->
     <section class="speakers w-screen h-screen bg-midnight">
@@ -66,7 +24,8 @@
             class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[530px]"
             id="speakers-list"
           >
-            <!-- Placeholder to keep classes in the css -->
+
+          <!-- Placeholder to keep classes in the css -->
             <div
               class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0"
               key="${speaker.id}"
@@ -117,14 +76,15 @@
                 />
               </div>
             </div>
-            <!-- End of Placeholder -->
+          <!-- End of Placeholder -->
+
           </div>
         </div>
       </div>
     </section>
     <!-- End of Speakers Section -->
-
-    <script src="/scripts/Countdown.js"></script>
-    <script src="/scripts/speakers.js"></script>
+  
+    <script src="../scripts/speakers.js"></script>
+    <script src="/scripts/scripts.js"></script>
   </body>
 </html>

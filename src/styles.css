@@ -4,19 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.countdown-about {
-  background: linear-gradient(180deg, #010103 0%, #00172a 100%);
+.test {
+  font-size: 10px;
 }
-
-.countdown {
-  font-family: "Righteous", cursive;
-  padding-top: 30px;
-}
-
-.about {
-  font-family: "Raleway", cursive;
-}
-
 .bg-midnight {
   background-color: var(--background-color);
 }
