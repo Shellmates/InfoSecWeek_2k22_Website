@@ -25,6 +25,9 @@
 .bg-midnight {
   background-color: var(--background-color);
 }
+.bg-dark-yellow {
+  background-color: var(--dark-yellow);
+}
 .font-raleway {
   font-family: "Raleway", sans-serif;
 }
