@@ -24,7 +24,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -42,9 +42,11 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -81,7 +83,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -125,7 +127,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -214,9 +217,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -263,7 +266,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -348,14 +351,16 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -402,9 +407,6 @@ iframe,
 embed,
 object {
   display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
 }
 
 /*
@@ -425,7 +427,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after{
+*,
+::before,
+::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -433,16 +437,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -450,305 +454,371 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
-.relative{
+.relative {
   position: relative;
 }
 
-.isolate{
+.isolate {
   isolation: isolate;
 }
 
-.mx-auto{
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-9{
+.my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
 }
 
-.my-\[calc\(5px\+\.3vw\)\]{
-  margin-top: calc(5px + .3vw);
-  margin-bottom: calc(5px + .3vw);
+.my-\[calc\(5px\+\.3vw\)\] {
+  margin-top: calc(5px + 0.3vw);
+  margin-bottom: calc(5px + 0.3vw);
 }
 
-.mr-8{
-  margin-right: 2rem;
-}
-
-.mb-3\.5{
-  margin-bottom: 0.875rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.ml-\[20px\]{
-  margin-left: 20px;
-}
-
-.mb-5{
+.my-5 {
+  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.mb-\[2\.4vw\]{
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-\[20px\] {
+  margin-left: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-\[2\.4vw\] {
   margin-bottom: 2.4vw;
 }
 
-.mb-6{
+.mb-6 {
   margin-bottom: 1.5rem;
 }
 
-.mr-5{
+.mr-5 {
   margin-right: 1.25rem;
 }
 
-.ml-20{
+.ml-20 {
   margin-left: 5rem;
 }
 
-.mb-16{
+.mb-16 {
   margin-bottom: 4rem;
 }
 
-.mb-7{
+.mb-7 {
   margin-bottom: 1.75rem;
 }
 
-.mt-7{
+.mt-7 {
   margin-top: 1.75rem;
 }
+.mr-\[5em\] {
+  margin-right: 5em;
+}
 
-.inline-block{
+.inline-block {
   display: inline-block;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.h-full{
+.h-full {
   height: 100%;
 }
 
-.h-64{
+.h-64 {
   height: 16rem;
 }
 
-.h-10{
+.h-10 {
   height: 2.5rem;
 }
 
-.h-32{
+.h-32 {
   height: 8rem;
 }
 
-.h-8{
+.h-8 {
   height: 2rem;
 }
 
-.max-h-\[570px\]{
+.max-h-\[570px\] {
   max-height: 570px;
 }
 
-.w-full{
+.w-full {
   width: 100%;
 }
 
-.w-3\/4{
+.w-3\/4 {
   width: 75%;
 }
 
-.w-\[calc\(150px\+60vw\)\]{
+.w-\[calc\(150px\+60vw\)\] {
   width: calc(150px + 60vw);
 }
 
-.w-9{
+.w-9 {
   width: 2.25rem;
 }
 
-.w-\[calc\(200px\+4vw\)\]{
+.w-\[calc\(200px\+4vw\)\] {
   width: calc(200px + 4vw);
 }
 
-.w-1\/5{
+.w-1\/5 {
   width: 20%;
 }
 
-.w-12{
+.w-12 {
   width: 3rem;
 }
 
-.w-16{
+.w-16 {
   width: 4rem;
 }
 
-.w-20{
+.w-20 {
   width: 5rem;
 }
 
-.max-w-\[30ch\]{
+.max-w-\[30ch\] {
   max-width: 30ch;
 }
 
-.flex-row{
+.skew-x-\[-20deg\] {
+  --tw-skew-x: -20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-x-\[20deg\] {
+  --tw-skew-x: 20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-row {
   flex-direction: row;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.items-center{
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
   align-items: center;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 
-.gap-7{
+.gap-7 {
   gap: 1.75rem;
 }
 
-.self-center{
+.self-center {
   align-self: center;
 }
 
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 
-.rounded-2xl{
+.rounded-2xl {
   border-radius: 1rem;
 }
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
+.border-2 {
+  border-width: 2px;
 }
 
-.p-10{
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 119 13 / var(--tw-border-opacity));
+}
+
+.border-blue-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 246 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#00172A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 23 42 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.p-10 {
   padding: 2.5rem;
 }
 
-.p-16{
+.p-16 {
   padding: 4rem;
 }
+.p-14 {
+  padding: 3.5rem;
+}
 
-.py-\[28px\]{
+.p-5 {
+  padding: 1.25rem;
+}
+
+.py-\[28px\] {
   padding-top: 28px;
   padding-bottom: 28px;
 }
 
-.pt-10{
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.pt-10 {
   padding-top: 2.5rem;
 }
 
-.pb-16{
+.pb-16 {
   padding-bottom: 4rem;
 }
 
-.pl-5{
+.pl-5 {
   padding-left: 1.25rem;
 }
 
-.pt-2{
+.pt-2 {
   padding-top: 0.5rem;
 }
 
-.text-center{
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.text-center {
   text-align: center;
 }
 
-.text-xl{
+.text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-lg{
+.text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-\[calc\(28px\+1\.3vw\)\]{
+.text-\[calc\(28px\+1\.3vw\)\] {
   font-size: calc(28px + 1.3vw);
 }
 
-.text-\[calc\(22px\+1\.1vw\)\]{
+.text-\[calc\(22px\+1\.1vw\)\] {
   font-size: calc(22px + 1.1vw);
 }
 
-.text-\[calc\(18px\+1\.1vw\)\]{
+.text-\[calc\(18px\+1\.1vw\)\] {
   font-size: calc(18px + 1.1vw);
 }
 
-.text-\[calc\(14px\+\.9vw\)\]{
-  font-size: calc(14px + .9vw);
+.text-\[calc\(14px\+\.9vw\)\] {
+  font-size: calc(14px + 0.9vw);
 }
 
-.font-normal{
+.font-normal {
   font-weight: 400;
 }
 
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
 
-.leading-\[1\.25\]{
+.leading-\[1\.25\] {
   line-height: 1.25;
 }
 
-.tracking-wide{
+.tracking-wide {
   letter-spacing: 0.025em;
 }
 
-.text-white{
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.countdown-about {
-  background: linear-gradient(180deg, #010103 0%, #00172a 100%);
-}
-
-.countdown {
-  font-family: "Righteous", cursive;
-  padding-top: 30px;
-}
-
-.about {
-  font-family: "Raleway", cursive;
+.text-\[\#A3770D\] {
+  --tw-text-opacity: 1;
+  color: rgb(163 119 13 / var(--tw-text-opacity));
 }
 
 .bg-midnight {
@@ -786,6 +856,58 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-righteous {
   font-family: "Righteous", cursive;
+}
+
+/* agenda section */
+
+.agenda {
+  font-family: "Raleway", cursive;
+}
+
+.agenda-hidden {
+  display: none;
+}
+
+.agenda-title::before,
+.agenda-title::after {
+  content: "";
+  position: absolute;
+  transform: skew(-45deg);
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+
+.agenda-title::before {
+  background-color: #a3770da6;
+  top: 15%;
+  right: 7%;
+}
+
+.agenda-title::after {
+  background-color: #ffffff33;
+  right: 0%;
+  top: -2px;
+}
+
+.agenda-btn-pressed {
+  background-color: #a3770d;
+  color: #00172a;
+}
+
+/*end of agenda section */
+
+.countdown-about {
+  background: linear-gradient(180deg, #010103 0%, #00172a 100%);
+}
+
+.countdown {
+  font-family: "Righteous", cursive;
+  padding-top: 30px;
+}
+
+.about {
+  font-family: "Raleway", cursive;
 }
 
 /* speakers section  */
@@ -840,7 +962,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
   overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 .speakers-list .speaker {
@@ -874,113 +996,149 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* end of speakers section */
 
-.hover\:opacity-60:hover{
+.hover\:bg-\[\#A3770D\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 119 13 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#00172A\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 23 42 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-60:hover {
   opacity: 0.6;
 }
 
-@media (min-width: 768px){
-  .md\:my-6{
+@media (min-width: 768px) {
+  .md\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
-  .md\:my-\[10vw\]{
+  .md\:my-\[10vw\] {
     margin-top: 10vw;
     margin-bottom: 10vw;
   }
 
-  .md\:mx-0{
+  .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .md\:ml-0{
+  .md\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .md\:ml-0 {
     margin-left: 0px;
   }
 
-  .md\:mb-0{
+  .md\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .md\:flex{
+  .md\:flex {
     display: flex;
   }
 
-  .md\:h-\[290px\]{
+  .md\:h-\[290px\] {
     height: 290px;
   }
 
-  .md\:w-10{
+  .md\:w-10 {
     width: 2.5rem;
   }
 
-  .md\:w-6\/12{
+  .md\:w-6\/12 {
     width: 50%;
   }
 
-  .md\:flex-row{
+  .md\:flex-row {
     flex-direction: row;
   }
 
-  .md\:items-center{
+  .md\:items-center {
     align-items: center;
   }
 
-  .md\:justify-between{
+  .md\:justify-between {
     justify-content: space-between;
   }
 
-  .md\:gap-0{
+  .md\:gap-0 {
     gap: 0px;
+  }
+  .md\:p-36 {
+    padding: 9rem;
+  }
+
+  .md\:py-\[1\.5\%\] {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
-@media (min-width: 1024px){
-  .lg\:my-\[5vw\]{
+@media (min-width: 1024px) {
+  .lg\:my-\[5vw\] {
     margin-top: 5vw;
     margin-bottom: 5vw;
   }
 
-  .lg\:mx-12{
+  .lg\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
   }
 
-  .lg\:mb-20{
+  .lg\:mb-20 {
     margin-bottom: 5rem;
   }
 
-  .lg\:mr-36{
+  .lg\:mr-36 {
     margin-right: 9rem;
   }
 
-  .lg\:h-\[320px\]{
+  .lg\:h-\[320px\] {
     height: 320px;
   }
 
-  .lg\:w-full{
+  .lg\:w-full {
     width: 100%;
   }
 
-  .lg\:pt-0{
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:p-48 {
+    padding: 12rem;
+  }
+
+  .lg\:pt-0 {
     padding-top: 0px;
   }
 
-  .lg\:pb-20{
+  .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
-  .lg\:text-5xl{
+  .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
 
-  .lg\:text-3xl{
+  .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .lg\:text-xl{
+  .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
