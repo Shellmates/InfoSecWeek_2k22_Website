@@ -9,6 +9,62 @@
   --dark-yellow: #a3770d;
 }
 
+.bg-midnight {
+  background-color: var(--background-color);
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.font-righteous {
+  font-family: "Righteous", cursive;
+}
+
+.bg-dark-yellow {
+  background-color: var(--dark-yellow);
+}
+
+.text-dark-yellow {
+  color: var(--dark-yellow);
+}
+
+/* agenda section */
+.agenda {
+  font-family: "Raleway", cursive;
+}
+
+.agenda-hidden {
+  display: none;
+}
+
+.agenda-title::before,
+.agenda-title::after {
+  content: "";
+  position: absolute;
+  transform: skew(-45deg);
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+.agenda-title::before {
+  background-color: #a3770da6;
+  top: 15%;
+  right: 7%;
+}
+.agenda-title::after {
+  background-color: #ffffff33;
+  right: 0%;
+  top: -2px;
+}
+
+.agenda-btn-pressed {
+  background-color: #a3770d;
+  color: #00172a;
+}
+
+/*end of agenda section */
+
 .countdown-about {
   background: linear-gradient(180deg, #010103 0%, #00172a 100%);
 }
@@ -20,23 +76,6 @@
 
 .about {
   font-family: "Raleway", cursive;
-}
-
-.bg-midnight {
-  background-color: var(--background-color);
-}
-.bg-dark-yellow {
-  background-color: var(--dark-yellow);
-}
-.font-raleway {
-  font-family: "Raleway", sans-serif;
-}
-.font-righteous {
-  font-family: "Righteous", cursive;
-}
-
-.text-dark-yellow {
-  color: var(--dark-yellow);
 }
 
 /* speakers section  */
