@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-  font-size: 10px;
+:root {
+  --background-color: #00172a;
+  --dark-yellow: #a3770d;
 }
+
 .bg-midnight {
   background-color: var(--background-color);
 }
@@ -17,10 +19,12 @@
   font-family: "Righteous", cursive;
 }
 
-/* speakers section  */
-.speakers {
-  --background-color: #00172a;
+.text-dark-yellow {
+  color: var(--dark-yellow);
 }
+
+/* speakers section  */
+
 .speakers-title::before,
 .speakers-title::after {
   content: "";
