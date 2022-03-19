@@ -4,6 +4,58 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.bg-midnight {
+    background-color: var(--background-color);
+}
+
+.font-raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+.font-righteous {
+    font-family: "Righteous", cursive;
+}
+
+/* agenda section */
+.agenda {
+    font-family: "Raleway", cursive;
+}
+
+.agenda-hidden {
+    display: none;
+}
+
+.agenda-title::before,
+.agenda-title::after {
+  content: "";
+  position: absolute;
+  transform: skew(-45deg);
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+.agenda-title::before {
+  background-color: #a3770da6;
+  top: 15%;
+  right: 7%;
+
+}
+.agenda-title::after {
+  background-color: #ffffff33;
+  right: 0%;
+  top: -2px;
+}
+
+.agenda-btn-pressed {
+    background-color: #A3770D;
+    color: #00172A;
+} 
+
+/*end of agenda section */
+
+
+
 .countdown-about {
   background: linear-gradient(180deg, #010103 0%, #00172a 100%);
 }
@@ -17,15 +69,8 @@
   font-family: "Raleway", cursive;
 }
 
-.bg-midnight {
-  background-color: var(--background-color);
-}
-.font-raleway {
-  font-family: "Raleway", sans-serif;
-}
-.font-righteous {
-  font-family: "Righteous", cursive;
-}
+
+
 
 /* speakers section  */
 .speakers {

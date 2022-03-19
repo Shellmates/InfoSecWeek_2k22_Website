@@ -483,6 +483,223 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mr-\[5em\]{
+  margin-right: 5em;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.skew-x-\[-20deg\]{
+  --tw-skew-x: -20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-x-\[20deg\]{
+  --tw-skew-x: 20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-gold{
+  --tw-border-opacity: 1;
+  border-color: rgb(163 119 13 / var(--tw-border-opacity));
+}
+
+.border-blue-50{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 246 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#00172A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 23 42 / var(--tw-bg-opacity));
+}
+
+.p-14{
+  padding: 3.5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.text-\[calc\(28px\+1\.3vw\)\]{
+  font-size: calc(28px + 1.3vw);
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#A3770D\]{
+  --tw-text-opacity: 1;
+  color: rgb(163 119 13 / var(--tw-text-opacity));
+}
+
+.agenda {
+  font-family: "Raleway", cursive;
+}
+
+.agenda-hidden {
+  display: none;
+}
+
+.font-righteous {
+  font-family: "Righteous", cursive;
+}
+
+.agenda-title::before,
+.agenda-title::after {
+  content: "";
+  position: absolute;
+  transform: skew(-45deg);
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+
+.agenda-title::before {
+  background-color: #a3770da6;
+  top: 15%;
+  right: 7%;
+}
+
+.agenda-title::after {
+  background-color: #ffffff33;
+  right: 0%;
+  top: -2px;
+}
+
+.agenda-btn-pressed {
+  background-color: #A3770D;
+  color: #00172A;
+}
+
+.hover\:bg-\[\#A3770D\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 119 13 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#00172A\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 23 42 / var(--tw-text-opacity));
+}
+
+.active\:text-\[\#00172A\]:active{
+  --tw-text-opacity: 1;
+  color: rgb(0 23 42 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .md\:p-36{
+    padding: 9rem;
+  }
+
+  .md\:py-\[1\.5\%\]{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .my-9{
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -855,6 +1072,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:p-48{
+    padding: 12rem;
+  }
+} 
   .lg\:my-\[5vw\]{
     margin-top: 5vw;
     margin-bottom: 5vw;
