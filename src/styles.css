@@ -56,7 +56,7 @@
   .shadow-top-down::after {
     content: "";
     position: absolute;
-    width: 98.65%;
+    width: 98%;
     height: 100px;
     left: 0;
     background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);

@@ -59,7 +59,7 @@ ${speakers
       `<div
             class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0" key=${speaker.id}
         >
-            <div class="speaker-info font-raleway text-white mb-5">
+            <div class="speaker-info font-raleway text-white mb-10">
                 <h1
                 class="font-righteous text-[calc(22px+1.1vw)] my-[calc(5px+.3vw)] mb-[2.4vw]"
                 >
