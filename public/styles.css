@@ -488,53 +488,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(5px + .3vw);
 }
 
-.my-\[10vw\]{
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.my-\[6vw\]{
-  margin-top: 6vw;
-  margin-bottom: 6vw;
-}
-
-.my-\[5vw\]{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
-
-.my-\[4vw\]{
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-}
-
-.my-\[3\.5vw\]{
-  margin-top: 3.5vw;
-  margin-bottom: 3.5vw;
-}
-
-.my-\[calc\(30px\+1vw\)\]{
-  margin-top: calc(30px + 1vw);
-  margin-bottom: calc(30px + 1vw);
-}
-
-.my-\[calc\(30px\+1\.5vw\)\]{
-  margin-top: calc(30px + 1.5vw);
-  margin-bottom: calc(30px + 1.5vw);
-}
-
 .mx-7{
   margin-left: 1.75rem;
   margin-right: 1.75rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .ml-\[20px\]{
@@ -565,32 +530,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mt-auto{
-  margin-top: auto;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-14{
   margin-top: 3.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .mt-9{
   margin-top: 2.25rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
+.mr-8{
+  margin-right: 2rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
+.mb-3\.5{
+  margin-bottom: 0.875rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .inline-block{
@@ -601,40 +562,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[100vh\]{
-  height: 100vh;
+.h-full{
+  height: 100%;
 }
 
 .h-64{
   height: 16rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-\[100px\]{
-  height: 100px;
-}
-
-.h-\[calc\(50px\+2vw\)\]{
-  height: calc(50px + 2vw);
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-\[calc\(60px\+2vw\)\]{
-  height: calc(60px + 2vw);
-}
-
-.max-h-\[530px\]{
-  max-height: 530px;
+.max-h-\[570px\]{
+  max-height: 570px;
 }
 
 .w-full{
@@ -653,36 +590,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: calc(200px + 4vw);
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .max-w-\[30ch\]{
   max-width: 30ch;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
   flex-direction: column;
 }
 
-.items-end{
-  align-items: flex-end;
-}
-
 .items-center{
   align-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
+.justify-center{
+  justify-content: center;
 }
 
 .self-center{
   align-self: center;
 }
 
-.border-4{
-  border-width: 4px;
-}
-
-.border-t-4{
-  border-top-width: 4px;
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .border-t-\[5px\]{
@@ -708,10 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -721,19 +654,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 28px;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-\[calc\(30px\+1\.5vw\)\]{
+  padding-top: calc(30px + 1.5vw);
+  padding-bottom: calc(30px + 1.5vw);
 }
 
 .py-5{
@@ -741,30 +664,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.pb-20{
+  padding-bottom: 5rem;
 }
 
-.py-\[calc\(30px\+1\.5vw\)\]{
-  padding-top: calc(30px + 1.5vw);
-  padding-bottom: calc(30px + 1.5vw);
-}
-
-.pb-8{
-  padding-bottom: 2rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -787,32 +692,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: calc(14px + .9vw);
 }
 
-.text-\[52px\]{
-  font-size: 52px;
-}
-
-.text-\[calc\(18px\+1vw\)\]{
-  font-size: calc(18px + 1vw);
+.text-\[calc\(28px\+1\.4vw\)\]{
+  font-size: calc(28px + 1.4vw);
 }
 
 .text-\[calc\(16px\+1vw\)\]{
   font-size: calc(16px + 1vw);
 }
 
-.text-\[calc\(28px\+1\.4vw\)\]{
-  font-size: calc(28px + 1.4vw);
-}
-
-.text-\[calc\(14px\+1vw\)\]{
-  font-size: calc(14px + 1vw);
-}
-
 .text-\[calc\(14px\+\.8vw\)\]{
   font-size: calc(14px + .8vw);
 }
 
-.text-\[calc\(14px\+\.6vw\)\]{
-  font-size: calc(14px + .6vw);
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-normal{
@@ -831,40 +730,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25;
 }
 
-.leading-loose{
-  line-height: 2;
-}
-
-.leading-4{
-  line-height: 1rem;
-}
-
-.leading-10{
-  line-height: 2.5rem;
-}
-
-.leading-9{
-  line-height: 2.25rem;
-}
-
-.leading-3{
-  line-height: .75rem;
-}
-
 .leading-6{
   line-height: 1.5rem;
-}
-
-.leading-\[30px\]{
-  line-height: 30px;
-}
-
-.leading-\[40px\]{
-  line-height: 40px;
-}
-
-.leading-\[100px\]{
-  line-height: 100px;
 }
 
 .tracking-wide{
@@ -879,6 +746,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 :root {
   --background-color: #00172a;
   --dark-yellow: #a3770d;
+}
+
+.countdown-about {
+  background: linear-gradient(180deg, #010103 0%, #00172a 100%);
+}
+
+.countdown {
+  font-family: "Righteous", cursive;
+  padding-top: 30px;
+}
+
+.about {
+  font-family: "Raleway", cursive;
 }
 
 .bg-midnight {
@@ -1023,24 +903,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100vh;
   }
 
-  .md\:h-\[100vh\]{
-    height: 100vh;
-  }
-
   .md\:w-10{
     width: 2.5rem;
   }
 
   .md\:w-11{
     width: 2.75rem;
-  }
-
-  .md\:w-14{
-    width: 3.5rem;
-  }
-
-  .md\:w-12{
-    width: 3rem;
   }
 
   .md\:items-center{
@@ -1063,7 +931,42 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 3rem;
   }
 
+  .lg\:mb-20{
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mr-36{
+    margin-right: 9rem;
+  }
+
   .lg\:h-\[320px\]{
     height: 320px;
+  }
+
+  .lg\:w-full{
+    width: 100%;
+  }
+
+  .lg\:pt-0{
+    padding-top: 0px;
+  }
+
+  .lg\:pb-20{
+    padding-bottom: 5rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

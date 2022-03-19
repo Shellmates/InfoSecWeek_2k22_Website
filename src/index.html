@@ -7,20 +7,65 @@
     <link href="../public/styles.css" rel="stylesheet" />
     <title>InfoSec Week Website</title>
   </head>
-  <body class="bg-midnight">
-    <!-- Speakers Section -->
-    <section class="speakers w-full md:h-[100vh] mb-5">
-      <div class="flex items-center p-10 flex-col isolate">
+  <body>
+    <!-- Countdown -->
+    <div class="countdown-about w-full h-full text-white">
+      <div class="countdown flex flex-row justify-center lg:mb-20">
+        <div
+          class="daysC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="daysTXT mb-3.5 lg:text-5xl text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Days</p>
+        </div>
+        <div
+          class="hoursC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="hoursTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Hours</p>
+        </div>
+        <div
+          class="minutesC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="minutesTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-xl">Minutes</p>
+        </div>
+        <div
+          class="secondsC flex flex-col justify-center align-center text-center"
+        >
+          <p class="secondsTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Seconds</p>
+        </div>
+      </div>
+      <div class="about text-center">
+        <p class="mb-10 lg:text-xl lg:pt-0 pt-10 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto">
+          InfoSec Week is an online event dedicated to cybersecurity, it’s the
+          <br />
+          best way to dive deeper into it and to discover its world!
+        </p>
+        <p class="lg:text-xl lg:pb-20 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto">
+          For 5 days, participants will get to attend conferences and workshops
+          <br />
+          in several areas of cybersecurity to learn more and enhance their
+          <br />
+          knowledge!
+        </p>
+      </div>
+    </div>
+    <!-- END COUNTDOWN -->
+
+    <!-- Speakers section -->
+    <section class="speakers w-full h-full bg-midnight overflow-hidden pb-20">
+      <div class="flex items-center p-10 flex-col isolate ">
         <p
-          class="speakers-title mb-12 text-white font-righteous text-[calc(28px+1.3vw)] relative"
+          class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-10"
         >
           Speakers
         </p>
         <div
-          class="shadow-top-down w-[calc(150px+60vw)] max-h-[530px] relative"
+          class="shadow-top-down w-[calc(150px+60vw)] max-h-[570px] relative"
         >
           <div
-            class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[530px]"
+            class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[570px]"
             id="speakers-list"
           >
             <!-- Placeholder to keep classes in the css -->
@@ -28,7 +73,7 @@
               class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0"
               key="${speaker.id}"
             >
-              <div class="speaker-info font-raleway text-white mb-5">
+              <div class="speaker-info font-raleway mb-5">
                 <h1
                   class="font-righteous text-[calc(22px+1.1vw)] my-[calc(5px+.3vw)] mb-[2.4vw]"
                 >
@@ -138,5 +183,8 @@
 
     <script src="../scripts/speakers.js"></script>
     <script src="/scripts/scripts.js"></script>
+    <script src="../scripts/Countdown.js"></script>
+  </body>
+
   </body>
 </html>
