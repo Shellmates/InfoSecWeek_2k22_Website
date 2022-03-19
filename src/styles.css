@@ -6,11 +6,14 @@
 
 :root {
   --background-color: #00172a;
-  --dark-yellow: #a3770d;
+  --bakground-dark-yellow: #a3770d;
 }
 
 .bg-midnight {
   background-color: var(--background-color);
+}
+.bg-dark-yellow {
+  background-color: var(--bakground-dark-yellow);
 }
 
 .font-raleway {
@@ -19,14 +22,6 @@
 
 .font-righteous {
   font-family: "Righteous", cursive;
-}
-
-.bg-dark-yellow {
-  background-color: var(--dark-yellow);
-}
-
-.text-dark-yellow {
-  color: var(--dark-yellow);
 }
 
 /* agenda section */
