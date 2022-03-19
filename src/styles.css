@@ -4,8 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 .bg-midnight {
   background-color: var(--background-color);
+=======
+:root {
+  --background-color: #00172a;
+  --bakground-dark-yellow: #a3770d;
+}
+
+.bg-midnight {
+  background-color: var(--background-color);
+}
+.bg-dark-yellow {
+  background-color: var(--bakground-dark-yellow);
+>>>>>>> 93c27a0a4ed3232e5436cbd9079fb74bec315fd3
 }
 
 .font-raleway {
@@ -65,6 +78,7 @@
   font-family: "Raleway", cursive;
 }
 
+<<<<<<< HEAD
 .bg-midnight {
   background-color: var(--background-color);
 }
@@ -101,10 +115,10 @@
   font-family: "Righteous", cursive;
 }
 
+=======
+>>>>>>> 93c27a0a4ed3232e5436cbd9079fb74bec315fd3
 /* speakers section  */
-.speakers {
-  --background-color: #00172a;
-}
+
 .speakers-title::before,
 .speakers-title::after {
   content: "";
