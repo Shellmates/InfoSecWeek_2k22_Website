@@ -4,26 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .bg-midnight {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .font-raleway {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .font-righteous {
-    font-family: "Righteous", cursive;
+  font-family: "Righteous", cursive;
 }
 
 /* agenda section */
 .agenda {
-    font-family: "Raleway", cursive;
+  font-family: "Raleway", cursive;
 }
 
 .agenda-hidden {
-    display: none;
+  display: none;
 }
 
 .agenda-title::before,
@@ -72,8 +71,6 @@
 
 /*end of agenda section */
 
-
-
 .countdown-about {
   background: linear-gradient(180deg, #010103 0%, #00172a 100%);
 }
@@ -86,7 +83,6 @@
 .about {
   font-family: "Raleway", cursive;
 }
-
 
 
 
