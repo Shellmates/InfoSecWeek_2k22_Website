@@ -1,13 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../public/styles.css" rel="stylesheet" />
     <title>InfoSec Week Website</title>
 </head>
+  
 <body>
+    <!-- Countdown -->
+    <div class="countdown-about w-full h-full text-white">
+      <div class="countdown flex flex-row justify-center lg:mb-20">
+        <div
+          class="daysC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="daysTXT mb-3.5 lg:text-5xl text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Days</p>
+        </div>
+        <div
+          class="hoursC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="hoursTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Hours</p>
+        </div>
+        <div
+          class="minutesC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+        >
+          <p class="minutesTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-xl">Minutes</p>
+        </div>
+        <div
+          class="secondsC flex flex-col justify-center align-center text-center"
+        >
+          <p class="secondsTXT lg:text-5xl mb-3.5 text-xl">00</p>
+          <p class="lg:text-3xl text-lg">Seconds</p>
+        </div>
+      </div>
+      <div class="about text-center">
+        <p class="mb-10 lg:text-xl lg:pt-0 pt-10 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto">
+          InfoSec Week is an online event dedicated to cybersecurity, it’s the
+          <br />
+          best way to dive deeper into it and to discover its world!
+        </p>
+        <p class="lg:text-xl lg:pb-20 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto">
+          For 5 days, participants will get to attend conferences and workshops
+          <br />
+          in several areas of cybersecurity to learn more and enhance their
+          <br />
+          knowledge!
+        </p>
+      </div>
+    </div>
+    <!-- END COUNTDOWN -->
+
+    <!-- Speakers section -->
+    <section class="speakers w-full h-full bg-midnight overflow-hidden pb-20">
+      <div class="flex items-center p-10 flex-col isolate ">
+        <p
+          class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-10"
+        >
+          Speakers
+        </p>
+        <div
+          class="shadow-top-down w-[calc(150px+60vw)] max-h-[570px] relative"
+        >
+          <div
+            class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[570px]"
+            id="speakers-list"
+          >
+            <div
+              class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0"
+              key="${speaker.id}"
+            >
+              <div class="speaker-info font-raleway mb-5">
+                <h1
+                  class="font-righteous text-[calc(22px+1.1vw)] my-[calc(5px+.3vw)] mb-[2.4vw]"
+                >
+                  ${speaker.activity}
+                </h1>
+                <h2 class="text-[calc(18px+1.1vw)] font-bold tracking-wide">
+                  ${speaker.name}
+                </h2>
+                <p
+                  class="text-[calc(14px+.9vw)] max-w-[30ch] leading-[1.25] mb-6"
+                >
+                  ${speaker.profession}
+                </p>
+                <a href="${speaker.facebook}">
+                  <img
+                    src="./assets/logo/Vector-1.svg"
+                    alt="facebook"
+                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                  />
+                </a>
+                <a href="${speaker.twitter}">
+                  <img
+                    src="./assets/logo/Vector.svg"
+                    alt="twiter"
+                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                  />
+                </a>
+                <a href="${speaker.linkedIn}">
+                  <img
+                    src="./assets/logo/Vector-2.svg"
+                    alt="LinkedIn"
+                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                  />
+                </a>
+              </div>
+              <div
+                class="speaker-img w-[calc(200px+4vw)] md:h-[290px] lg:h-[320px] md:mx-0 h-64 lg:mx-12 ml-20 mb-16 md:mb-0 self-center"
+              >
+                <img
+                  src="./assets/speakers/speaker.png"
+                  alt="speaker.png"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+             check speakers.js
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--agenda section-->
     <section class="agenda h-full w-full bg-[#00172A] pb-16">
         <div class="flex flex-col isolate p-14 lg:p-48 md:p-36 md:text-2xl">
             <p class="font-righteous px-20 md:py-[1.5%] agenda-title text-white font-normal text-[calc(28px+1.3vw)] relative mb-10 mx-auto">
@@ -133,8 +251,9 @@
                 </div>
         </div>
     </section>
-    
-    <script src="/scripts/scripts.js"></script>
-    <script src="/scripts/agenda.js"></script>
-</body>
+    <!--end of agenda section-->
+  <script src="/scripts/Countdown.js"></script>
+  <script src="/scripts/speakers.js"></script>
+  <script src="/scripts/agenda.js"></script>
+  </body>
 </html>
