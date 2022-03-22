@@ -199,3 +199,9 @@
   }
   
   /* end of speakers section */
+
+  /* Faq section */
+  .answer, .question {
+    font-family: "Raleway", cursive;
+  }
+  /* end of Faq section */

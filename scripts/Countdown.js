@@ -18,7 +18,6 @@ function updateCountdowntime() {
   hours.innerText = h < 10 ? "0" + h : h;
   minutes.innerText = m < 10 ? "0" + m : m;
   seconds.innerText = s < 10 ? "0" + s : s;
-  console.log(d, h, m, s);
 }
 
 setInterval(updateCountdowntime, 1000);
