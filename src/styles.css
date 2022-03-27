@@ -49,23 +49,23 @@
 .agenda-btn-pressed {
     background-color: #A3770D;
     color: #00172A;
-} 
+}
 @media screen and (min-width: 600px) {
     .agenda-btns  {
         margin-right:7%;
-        margin-left: 7%; 
+        margin-left: 7%;
     }
 }
 @media screen and (max-width: 642px){
     .agenda-btns {
         margin-right:40px;
-        margin-left: 40px; 
+        margin-left: 40px;
     }
 }
 @media screen and (max-width: 500px) {
     .agenda Button {
         padding-right:20px;
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 }
 
@@ -144,7 +144,7 @@
     left: -35%;
     top: -2px;
   }
-  
+
   @media screen and (min-width: 768px) {
     .shadow-top-down::before,
     .shadow-top-down::after {
@@ -162,7 +162,7 @@
       bottom: -35px;
     }
   }
-  
+
   .speakers-list {
     overflow: hidden;
     overflow-y: scroll;
@@ -171,33 +171,33 @@
   .speakers-list .speaker {
     scroll-snap-align: center;
   }
-  
+
   .speakers-list::-webkit-scrollbar {
     width: 10px;
     background: rgba(196, 196, 196, 0.05);
-  
+
     border-radius: 10px;
   }
-  
+
   .speakers-list::-webkit-scrollbar-thumb {
     background: rgba(196, 196, 196, 0.45);
     border-radius: 10px;
     padding: 10px;
   }
-  
+
   @media screen and (min-width: 768px) {
     .speaker:nth-child(even) .speaker-info {
       order: 2;
       margin-right: 3rem;
     }
-  
+
     .speaker:nth-child(even) .speaker-img {
       order: 1;
       margin-left: 0;
       margin-right: 2rem;
     }
   }
-  
+
   /* end of speakers section */
 
   /* Faq section */
@@ -205,3 +205,25 @@
     font-family: "Raleway", cursive;
   }
   /* end of Faq section */
+
+  /* navbar */
+  .nav_li {
+    display: inline;
+    padding: 10px;
+  }
+  .nav_li:hover{
+
+    color: #A3770D;
+    text-decoration: underline;
+  }
+
+  /* end of navbar */
+
+  /* hero section */
+  .hero{
+    background-image: url("assets/background/hacker-working-in-the-darkness-1.png");height: 100vh;width: 100vh;
+    text-align: center;
+    justify-content: center;
+    /*display: flex;*/
+  }
+  /* end of hero Section */
