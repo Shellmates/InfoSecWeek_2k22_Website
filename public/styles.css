@@ -512,6 +512,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   isolation: isolate;
 }
 
+.z-30{
+  z-index: 30;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -545,6 +549,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-7{
   margin-left: 1.75rem;
   margin-right: 1.75rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .mr-8{
@@ -635,8 +643,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 16rem;
 }
 
-.h-5{
-  height: 1.25rem;
+.h-7{
+  height: 1.75rem;
 }
 
 .h-20{
@@ -653,18 +661,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[24px\]{
   height: 24px;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-7{
-  height: 1.75rem;
 }
 
 .max-h-\[570px\]{
@@ -764,6 +760,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.75rem;
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .self-center{
   align-self: center;
 }
@@ -810,11 +812,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#00172A\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#000D17\]{
@@ -939,6 +936,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -970,11 +987,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-\[calc\(20px\+1\.3vw\)\]{
   font-size: calc(20px + 1.3vw);
 }
@@ -985,6 +997,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[calc\(8px\+\.4vw\)\]{
   font-size: calc(8px + .4vw);
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .font-normal{
@@ -1246,6 +1262,60 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* end of Faq section */
 
+/* navbar */
+
+.nav_li {
+  display: inline;
+  padding: 10px;
+}
+
+.nav_li:hover{
+  color: #A3770D;
+  text-decoration: underline;
+}
+
+/* end of navbar */
+
+/* hero section */
+
+.hero-logo {
+  margin:20px;
+  width:47px;
+}
+
+.hero-layer-one{
+  color:white;
+  height: 100vh;
+  background-image: url("assets/background/hacker-working-in-the-darkness-1.png");
+  text-align: center;
+  justify-content: center;
+  background-size: cover;
+  /* background: linear-gradient(180deg, #010103 0%, rgba(0, 23, 42, 0) 100%); */
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+  /*display: flex;*/
+}
+
+.hero-layer-two{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 103%;
+  background: linear-gradient(180deg, #010103 0%, rgba(0, 23, 42, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.hero-layer-three{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 103%;
+  background: linear-gradient(180deg, rgba(1, 35, 90, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+/* end of hero Section */
+
 .hover\:bg-\[\#A3770D\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(163 119 13 / var(--tw-bg-opacity));
@@ -1262,11 +1332,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:opacity-90:hover{
   opacity: 0.9;
-}
-
-.group:hover .group-hover\:bg-gray-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px){

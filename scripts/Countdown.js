@@ -2,10 +2,8 @@ const days = document.getElementsByClassName("daysTXT")[0];
 const hours = document.getElementsByClassName("hoursTXT")[0];
 const minutes = document.getElementsByClassName("minutesTXT")[0];
 const seconds = document.getElementsByClassName("secondsTXT")[0];
-console.log(days);
 const currentyear = new Date().getFullYear();
 const newYearTime = new Date(`April 1 2022 08:00:00`);
-console.log(newYearTime);
 
 function updateCountdowntime() {
   const currentTime = new Date();
