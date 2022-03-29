@@ -3,7 +3,7 @@ const hours = document.getElementsByClassName("hoursTXT")[0];
 const minutes = document.getElementsByClassName("minutesTXT")[0];
 const seconds = document.getElementsByClassName("secondsTXT")[0];
 const currentyear = new Date().getFullYear();
-const newYearTime = new Date(`April 3 2022 17:00:00`);
+const newYearTime = new Date(`April 4 2022 22:30:00`);
 
 function updateCountdowntime() {
   const currentTime = new Date();
