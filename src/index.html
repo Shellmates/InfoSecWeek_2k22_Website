@@ -10,34 +10,80 @@
   </head>
 
   <body>
-    <section class="flex flex-col relative justify-center text-center">
-      <div class="hero-layer-one">
-        <div class="hero-layer-two">
-          <div class="hero-layer-three">
-            <div class=" hero-content absolute ">
-              <div>
-                <ul class="navbar font-semibold text-2xl">
-                  <li class="nav_li"><a href="#">Home</a></li>
-                  <li class="nav_li"><a href="#">About</a></li>
-                  <li class="nav_li"><a href="#">Agenda</a></li>
-                  <li class="nav_li"><a href="#">Speakers</a></li>
-                  <li class="nav_li"><a href="#">FAQ</a></li>
-                  <li class="nav_li"><a href="#">Contact</a></li>
-                  <li class="nav_li text-[#A3770D]"><a href="#">Register Now</a></li>
-                </ul>
-              </div>
-              <div class="flex items-center flex-col space-y-10">
-                <img src="assets/logo/Shellmates_logo.png" alt="Shellmates logo" class="hero-logo" >
-                <h1 class="font-righteous mt-5 text-7xl" style="margin-top:20px;font-size:4.5rem">Infosec Week Event</h1>
-                <h2 class="font-righteous text-5xl" style="font-size:3rem">By Shellmates Club</h2>
-                <p class="font-raleway text-2xl" style="margin-top:34px;font-size:1.5rem">02-07 April 2022 - Online</p>
-                <img onclick="window.scrollTo(0,window.innerHeight)" src="assets/logo/Scroll.png" alt="Scroll" style="margin-top: 60px;cursor:pointer;flex:center;">
-              </div>
-            </div>
-          </div>
+
+    <!-- Hero Section -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-white bg-transparent dark-mode:text-gray-200 dark-mode:bg-gray-800 z-50 fixed navbar-fixed-top">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-end">
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow p-4 hidden md:flex md:justify-center md:flex-row">
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#home">Home</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#about">About</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#agenda">Agenda</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#speakers">Speakers</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#reviews">Reviews</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#faq">FAQ</a>
+          <a class="px-6 py-2 mt-2 text-lg font-semibold font-raleway bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-[#A3770D] hover:underline focus:text-[#A3770D] focus:outline-none focus:shadow-outline" href="#contact-form">Contact</a>
+        </nav>
       </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <section id="home" class="hero flex flex-col">
+          <div class="flex items-center flex-col space-y-10 mt-12">
+            <img src="assets/logo/Shellmates_logo.png" alt="Shellmates logo" class="hero-logo mt-24" width="47" >
+            <h1 class="font-righteous mt-7 text-7xl">Infosec Week Event</h1>
+            <h2 class="font-righteous text-5xl">By Shellmates Club</h2>
+            <p class="font-raleway mt-10 text-2xl">02-07 April 2022 - Online</p>
+            <img onclick="window.scrollTo(0,window.innerHeight)" src="assets/logo/Scroll.png" alt="Scroll" style="margin-top: 60px;cursor:pointer;flex:center;">
+          </div>
     </section>
+    <!-- End Hero Section -->
+
+    <!-- Scroll to top -->
+
+    <button class="fixed w-12 h-12 bottom-10 right-10 bg-[#02121F] fill-white ease-out hover:bg-white hover:fill-[#02121F] hover:ease-out px-3 py-3 rounded-full cursor-pointer z-50" onclick="topFunction()" id="myBtn" title="Go to top">
+      <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><title/><path d="M82.6074,62.1072,52.6057,26.1052a6.2028,6.2028,0,0,0-9.2114,0L13.3926,62.1072a5.999,5.999,0,1,0,9.2114,7.6879L48,39.3246,73.396,69.7951a5.999,5.999,0,1,0,9.2114-7.6879Z"/></svg>
+    </button> 
+
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
 
     <!-- Countdown -->
     <div class="countdown-about w-full h-full text-white">
@@ -67,7 +113,7 @@
             <p class="lg:text-3xl text-lg">Seconds</p>
           </div>
         </div>
-        <div class="about text-center">
+        <div id="about" class="about text-center pt-32">
           <p
             class="mb-10 lg:text-3xl lg:pt-0 pt-10 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto"
           >
@@ -90,7 +136,7 @@
     <!-- END COUNTDOWN -->
 
     <!-- Speakers section -->
-    <section class="speakers w-full h-full bg-midnight overflow-hidden pb-16">
+    <section id="speakers" class="speakers w-full h-full bg-midnight overflow-hidden pt-20">
       <div class="flex items-center p-10 flex-col isolate">
         <p
           class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-10"
@@ -165,7 +211,7 @@
       <!-- END SPEAKERS -->
 
     <!--agenda section-->
-    <section class="agenda h-full w-full bg-[#00172A] pb-16">
+    <section id="agenda" class="agenda h-full w-full bg-[#00172A] pt-32">
         <div class="flex flex-col items-center justify-center isolate p-5 md:p-10 md:text-2xl">
             <p class="font-righteous px-20 md:py-[1.5%] agenda-title text-white font-normal text-[calc(28px+1.3vw)] relative mb-10 mx-auto">
             Agenda</p>
@@ -295,14 +341,14 @@
     </section>
     <!--End Of Agenda Section-->
     <!-- start FAQ -->
-    <section id="faq" class="contact-form w-full h-full overflow-hidden flex items-center flex-col isolate pb-32">
+    <section id="faq" class="contact-form w-full h-full overflow-hidden flex items-center flex-col isolate pt-32">
             <div class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] px-10 relative mb-16">FAQ</div>
               <dl class="mt-8 mx-auto max-w-screen-sm lg:max-w-screen-lg flex flex-col lg:flex-row lg:flex-wrap">
                   <div class="lg:w-full">
                       <div class="question-and-answer select-none cursor-pointer border-b mx-8 my-3 pr-6 py-4 text-sm group">
                           <dt class="question">
                               <div class="flex justify-between">
-                                  <div class="text-white font-normal text-2xl">
+                                  <div class="text-white font-normal text-lg lg:text-2xl">
                                   Do you accept Paypal?
                                   </div>
                                   <div>
@@ -332,7 +378,7 @@
                       <div class="question-and-answer select-none cursor-pointer border-b mx-8 my-3 pr-6 py-4 text-sm group">
                           <dt class="question">
                               <div class="flex justify-between">
-                                  <div class="text-white font-normal text-2xl">
+                                  <div class="text-white font-normal text-lg lg:text-2xl">
                                       What is your SLA Guarantee ?
                                   </div>
                                   <div>
@@ -362,7 +408,7 @@
                       <div class="question-and-answer select-none cursor-pointer border-b mx-8 my-3 pr-6 py-4 text-sm group">
                           <dt class="question">
                               <div class="flex justify-between">
-                                  <div class="text-white font-normal text-2xl">
+                                  <div class="text-white font-normal text-lg lg:text-2xl">
                                       Are there more Tailwind templates ?
                                   </div>
                                   <div>
@@ -392,7 +438,7 @@
                       <div class="question-and-answer select-none cursor-pointer border-b mx-8 my-3 pr-6 py-4 text-sm group">
                           <dt class="question">
                               <div class="flex justify-between">
-                                  <div class="text-white font-normal text-2xl">
+                                  <div class="text-white font-normal text-lg lg:text-2xl">
                                       Is this template free for commercial use ?
                                   </div>
                                   <div>
@@ -433,9 +479,7 @@
   <!-- end FAQ -->
 
     <!-- Contact Form -->
-    <div
-      class="contact-form w-full h-full overflow-hidden flex items-center flex-col isolate pb-32"
-    >
+    <div id="contact-form" class="contact-form w-full h-full overflow-hidden flex items-center flex-col isolate pt-32 pb-32">
       <p
         class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-16"
       >
