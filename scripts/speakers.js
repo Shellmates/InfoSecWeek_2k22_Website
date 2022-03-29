@@ -3,7 +3,7 @@ const speakers = [
     id: 1,
     name: "Marouane Benbetka",
     profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "./assets/logo/Vector-1.svg",
+    img_url: "/public/assets/logo/Vector-1.svg",
     activity: "Conference: Lock Picking 101",
     facebook: "#",
     linkedIn: "#",
@@ -13,7 +13,7 @@ const speakers = [
     id: 2,
     name: "Hania Mennad",
     profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "./assets/logo/Vector-1.svg",
+    img_url: "/public/assets/logo/Vector-1.svg",
     activity: "Conference: Lock Picking 101",
     facebook: "#",
     linkedIn: "#",
@@ -23,7 +23,7 @@ const speakers = [
     id: 3,
     name: "Walid Berrouk",
     profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "./assets/logo/Vector-1.svg",
+    img_url: "/public/assets/logo/Vector-1.svg",
     activity: "Conference: Lock Picking 101",
     facebook: "#",
     linkedIn: "#",
@@ -33,7 +33,7 @@ const speakers = [
     id: 4,
     name: "Sami Bouchbout",
     profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "./assets/logo/Vector-1.svg",
+    img_url: "/public/assets/logo/Vector-1.svg",
     activity: "Conference: Lock Picking 101",
     facebook: "#",
     linkedIn: "#",
@@ -43,7 +43,7 @@ const speakers = [
     id: 5,
     name: "balaaa blaaaaaaa",
     profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "./assets/logo/Vector-1.svg",
+    img_url: "/public/assets/logo/Vector-1.svg",
     activity: "Conference: Lock Picking 101",
     facebook: "#",
     linkedIn: "#",
@@ -75,21 +75,21 @@ ${speakers
                  </p>
                 <a href=${speaker.facebook}>
                     <img
-                    src="./assets/logo/Vector-1.svg"
+                    src="/public/assets/logo/Vector-1.svg"
                     alt="facebook"
                     class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
                     />
                 </a>
                 <a href=${speaker.twitter}>
                     <img
-                    src="./assets/logo/Vector.svg"
+                    src="/public/assets/logo/Vector.svg"
                     alt="twiter"
                     class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
                     />
                 </a>
                 <a href=${speaker.linkedIn}>
                     <img
-                    src="./assets/logo/Vector-2.svg"
+                    src="/public/assets/logo/Vector-2.svg"
                     alt="LinkedIn"
                     class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
                     />
@@ -99,7 +99,7 @@ ${speakers
         class="speaker-img w-[calc(200px+4vw)] md:h-[290px] lg:h-[320px] md:mx-0 h-64 lg:mx-12 ml-20 mb-16 md:mb-0 self-center"
         >
             <img
-                src="./assets/speakers/speaker.png"
+                src="/public/assets/speakers/speaker.png"
                 alt="speaker.png"
                 class="w-full h-full object-cover"
             />
