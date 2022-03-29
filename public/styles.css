@@ -543,6 +543,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -561,16 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-\[calc\(5px\+\.3vw\)\]{
   margin-top: calc(5px + .3vw);
   margin-bottom: calc(5px + .3vw);
-}
-
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
 .mt-2{
@@ -613,6 +608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 5em;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -651,10 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-20{
   margin-left: 5rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .block{
@@ -977,14 +972,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-16{
@@ -1521,6 +1516,14 @@ body {
     width: 2.5rem;
   }
 
+  .md\:max-w-screen-md{
+    max-width: 768px;
+  }
+
+  .md\:max-w-screen-lg{
+    max-width: 1024px;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1605,6 +1608,10 @@ body {
 
   .lg\:max-w-screen-lg{
     max-width: 1024px;
+  }
+
+  .lg\:max-w-screen-xl{
+    max-width: 1280px;
   }
 
   .lg\:flex-row{
