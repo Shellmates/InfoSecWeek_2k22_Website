@@ -874,13 +874,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(163 119 13 / var(--tw-border-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
-}
-
 .bg-\[\#02121F\]{
   --tw-bg-opacity: 1;
   background-color: rgb(2 18 31 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-\[\#00172A\]{
@@ -1520,10 +1520,6 @@ body {
     max-width: 768px;
   }
 
-  .md\:max-w-screen-lg{
-    max-width: 1024px;
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1547,6 +1543,10 @@ body {
 
   .md\:gap-y-5{
     row-gap: 1.25rem;
+  }
+
+  .md\:bg-transparent{
+    background-color: transparent;
   }
 
   .md\:p-10{
@@ -1604,10 +1604,6 @@ body {
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:max-w-screen-lg{
-    max-width: 1024px;
   }
 
   .lg\:max-w-screen-xl{
