@@ -16,7 +16,7 @@ const speakers = [
   {
     id: 3,
     name: "Amine Merzouk",
-    profession: "PhD Student in Adversarial Machine Learning Teacher at Polytechnique Montréal and Research at IMT Atlantique, France",
+    profession: "PhD Student in Adversarial Machine Learning, a Teacher at Polytechnique Montréal and a Researcher at IMT Atlantique, France",
     img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752675/infosecweek_site/speakers/IMG_20220328_161019_qcnzag.jpg",
     activity: "Talk : Security Threats on Machine Learning",
   },
