@@ -533,14 +533,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-9{
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-9{
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .my-16{
@@ -568,9 +568,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(5px + .3vw);
 }
 
-.my-32{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mr-\[5em\]{
+  margin-right: 5em;
 }
 
 .mt-2{
@@ -603,14 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-3{
   margin-bottom: 0.75rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mr-\[5em\]{
-  margin-right: 5em;
 }
 
 .mt-5{
@@ -649,10 +644,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.4vw;
 }
 
-.mr-5{
-  margin-right: 1.25rem;
-}
-
 .ml-20{
   margin-left: 5rem;
 }
@@ -673,16 +664,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .h-6{
   height: 1.5rem;
 }
 
 .h-12{
   height: 3rem;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .h-7{
@@ -739,10 +730,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[24px\]{
   width: 24px;
-}
-
-.w-9{
-  width: 2.25rem;
 }
 
 .w-\[calc\(200px\+4vw\)\]{
@@ -879,6 +866,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(163 119 13 / var(--tw-border-opacity));
 }
 
+.bg-\[\#00172A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#02121F\]{
   --tw-bg-opacity: 1;
   background-color: rgb(2 18 31 / var(--tw-bg-opacity));
@@ -886,11 +878,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-transparent{
   background-color: transparent;
-}
-
-.bg-\[\#00172A\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#000D17\]{
@@ -907,6 +894,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -915,46 +906,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .p-1{
   padding: 0.25rem;
 }
 
 .p-2{
   padding: 0.5rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-\[28px\]{
-  padding-top: 28px;
-  padding-bottom: 28px;
 }
 
 .px-20{
@@ -975,6 +932,41 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-40{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.py-\[28px\]{
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .py-4{
@@ -1007,18 +999,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
-.px-32{
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.px-40{
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
 .pt-32{
   padding-top: 8rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pt-10{
@@ -1027,10 +1013,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
 }
 
 .pr-6{
@@ -1051,6 +1033,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center{
   text-align: center;
+}
+
+.text-\[calc\(28px\+1\.3vw\)\]{
+  font-size: calc(28px + 1.3vw);
 }
 
 .text-lg{
@@ -1076,10 +1062,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[calc\(28px\+1\.3vw\)\]{
-  font-size: calc(28px + 1.3vw);
 }
 
 .text-sm{
@@ -1111,12 +1093,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: calc(14px + .9vw);
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-normal{
   font-weight: 400;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .font-bold{
@@ -1404,28 +1386,28 @@ body {
   transition: 0.3s all;
 }
 
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#A3770D\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(163 119 13 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:fill-\[\#02121F\]:hover{
   fill: #02121F;
 }
 
-.hover\:text-\[\#A3770D\]:hover{
-  --tw-text-opacity: 1;
-  color: rgb(163 119 13 / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#00172A\]:hover{
   --tw-text-opacity: 1;
   color: rgb(0 23 42 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#A3770D\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(163 119 13 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -1435,10 +1417,6 @@ body {
 
 .hover\:opacity-90:hover{
   opacity: 0.9;
-}
-
-.hover\:opacity-60:hover{
-  opacity: 0.6;
 }
 
 .hover\:ease-out:hover{
@@ -1483,16 +1461,16 @@ body {
     margin-right: 0px;
   }
 
+  .md\:mb-20{
+    margin-bottom: 5rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
 
   .md\:ml-4{
     margin-left: 1rem;
-  }
-
-  .md\:mb-20{
-    margin-bottom: 5rem;
   }
 
   .md\:mb-0{
@@ -1525,10 +1503,6 @@ body {
 
   .md\:h-\[290px\]{
     height: 290px;
-  }
-
-  .md\:w-10{
-    width: 2.5rem;
   }
 
   .md\:max-w-screen-md{
@@ -1568,14 +1542,14 @@ body {
     padding: 2.5rem;
   }
 
-  .md\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .md\:py-\[1\.5\%\]{
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-2xl{

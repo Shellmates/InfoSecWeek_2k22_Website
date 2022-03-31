@@ -2,14 +2,14 @@ const speakers = [
   {
     id: 1,
     name: "Seif Hateb",
-    profession: "Security Architect (12+ Years of Experience) with success in guiding design, testing, and implementation of leading-edge technology solutions.",
+    profession: "Security Architect (12+ years of experience) with success in guiding design, testing, and implementation of leading-edge technology solutions.",
     img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752673/infosecweek_site/speakers/1633552821677_mv7qbo.jpg",
     activity: "Conference : How to secure 5G networks",
   },
   {
     id: 2,
     name: "Bellal Arezki Mustapha",
-    profession: "Cyber Security Assistant Manager in deloitte ",
+    profession: "Cyber Security Assistant Manager at Deloitte ",
     img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752677/infosecweek_site/speakers/37055938_1982889151742838_4728724276675346432_n_z0tril.jpg",
     activity: "Conference : Next Generation Security Solutions",
   },

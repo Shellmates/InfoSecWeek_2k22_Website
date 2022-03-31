@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .bg-midnight {
   background-color: var(--background-color);
 }
@@ -13,7 +17,6 @@
 }
 
 /* agenda section */
-
 .agenda {
   font-family: "Raleway", cursive;
 }
@@ -31,13 +34,12 @@
   height: 100%;
   z-index: -1;
 }
-
 .agenda-title::before {
   background-color: #a3770da6;
   top: 15%;
   right: 6%;
-}
 
+}
 .agenda-title::after {
   background-color: #ffffff33;
   right: -3%;
@@ -45,29 +47,26 @@
 }
 
 .agenda-btn-pressed {
-  background-color: #A3770D;
-  color: #00172A;
+    background-color: #A3770D;
+    color: #00172A;
 }
-
 @media screen and (min-width: 600px) {
-  .agenda-btns  {
-    margin-right:7%;
-    margin-left: 7%;
-  }
+    .agenda-btns  {
+        margin-right:7%;
+        margin-left: 7%;
+    }
 }
-
 @media screen and (max-width: 642px){
-  .agenda-btns {
-    margin-right:40px;
-    margin-left: 40px;
-  }
+    .agenda-btns {
+        margin-right:40px;
+        margin-left: 40px;
+    }
 }
-
 @media screen and (max-width: 500px) {
-  .agenda Button {
-    padding-right:20px;
-    padding-left: 20px;
-  }
+    .agenda Button {
+        padding-right:20px;
+        padding-left: 20px;
+    }
 }
 
 /*end of agenda section */
@@ -84,6 +83,7 @@
 .about {
   font-family: "Raleway", cursive;
 }
+
 
 .contact-form {
   background: #00172a;
@@ -117,127 +117,117 @@
 .font-raleway {
   font-family: "Raleway", sans-serif;
 }
-
 .font-righteous {
   font-family: "Righteous", cursive;
 }
 
 /* speakers section  */
-
 .speakers {
-  --background-color: #00172a;
-}
-
-.speakers-title::before,
+    --background-color: #00172a;
+  }
+  .speakers-title::before,
   .speakers-title::after {
-  content: "";
-  position: absolute;
-  transform: skew(-45deg);
-  width: 180%;
-  height: 95%;
-  z-index: -1;
-}
-
-.speakers-title::before {
-  background-color: #a3770da6;
-  top: 15%;
-  left: -50%;
-}
-
-.speakers-title::after {
-  background-color: #ffffff33;
-  left: -35%;
-  top: -2px;
-}
-
-@media screen and (min-width: 768px) {
-  .shadow-top-down::before,
-    .shadow-top-down::after {
     content: "";
     position: absolute;
-    width: 98%;
-    height: 100px;
-    left: 0;
-    background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
+    transform: skew(-45deg);
+    width: 180%;
+    height: 95%;
+    z-index: -1;
+  }
+  .speakers-title::before {
+    background-color: #a3770da6;
+    top: 15%;
+    left: -50%;
+  }
+  .speakers-title::after {
+    background-color: #ffffff33;
+    left: -35%;
+    top: -2px;
   }
 
-  /* .shadow-top-down::before {
+  @media screen and (min-width: 768px) {
+    .shadow-top-down::before,
+    .shadow-top-down::after {
+      content: "";
+      position: absolute;
+      width: 98%;
+      height: 100px;
+      left: 0;
+      background: linear-gradient(180deg, #00172a 0%, rgba(0, 23, 42, 0) 326.31%);
+    }
+    /* .shadow-top-down::before {
       top: 8px;
     } */
-
-  .shadow-top-down::after {
-    bottom: -35px;
-  }
-}
-
-.speakers-list {
-  overflow: hidden;
-  overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-.speakers-list .speaker {
-  scroll-snap-align: center;
-}
-
-.speakers-list::-webkit-scrollbar {
-  width: 10px;
-  background: rgba(196, 196, 196, 0.05);
-  border-radius: 10px;
-}
-
-.speakers-list::-webkit-scrollbar-thumb {
-  background: rgba(196, 196, 196, 0.45);
-  border-radius: 10px;
-  padding: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .speaker:nth-child(even) .speaker-info {
-    order: 2;
-    margin-right: 3rem;
+    .shadow-top-down::after {
+      bottom: -35px;
+    }
   }
 
-  .speaker:nth-child(even) .speaker-img {
-    order: 1;
-    margin-left: 0;
-    margin-right: 2rem;
+  .speakers-list {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
-}
+  .speakers-list .speaker {
+    scroll-snap-align: center;
+  }
 
-/* end of speakers section */
+  .speakers-list::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(196, 196, 196, 0.05);
 
-/* Faq section */
+    border-radius: 10px;
+  }
 
-.answer, .question {
-  font-family: "Raleway", cursive;
-}
+  .speakers-list::-webkit-scrollbar-thumb {
+    background: rgba(196, 196, 196, 0.45);
+    border-radius: 10px;
+    padding: 10px;
+  }
 
-/* end of Faq section */
+  @media screen and (min-width: 768px) {
+    .speaker:nth-child(even) .speaker-info {
+      order: 2;
+      margin-right: 3rem;
+    }
 
-/* navbar */
+    .speaker:nth-child(even) .speaker-img {
+      order: 1;
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
 
-.navbar-fixed-top.scrolled {
-  background-color: #02121F !important;
-  transition: background-color 500ms ease;
-}
+  /* end of speakers section */
 
-/* end of navbar */
+  /* Faq section */
+  .answer, .question {
+    font-family: "Raleway", cursive;
+  }
+  /* end of Faq section */
 
-/* hero section */
+  /* navbar */
 
-.hero{
-  color:white;
-  height: 110vh;
-  width: 100%;
-  background-image: url("assets/background/hacker-working-in-the-darkness-1.png");
-  text-align: center;
-  background-size: cover;
-}
+  .navbar-fixed-top.scrolled {
+    background-color: #02121F !important;
+    transition: background-color 500ms ease;
+  }
 
-/* end of hero Section */
+  /* end of navbar */
 
-body {
-  transition: 0.3s all;
-}
+  /* hero section */
+
+  .hero{
+    color:white;
+    height: 110vh;
+    width: 100%;
+    background-image: url("assets/background/hacker-working-in-the-darkness-1.png");
+    text-align: center;
+    background-size: cover;
+  }
+
+  /* end of hero Section */
+
+  body {
+    transition: 0.3s all;
+  }
