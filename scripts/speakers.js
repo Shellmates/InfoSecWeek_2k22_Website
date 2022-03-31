@@ -1,53 +1,38 @@
 const speakers = [
   {
     id: 1,
-    name: "Marouane Benbetka",
-    profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "/public/assets/logo/Vector-1.svg",
-    activity: "Conference: Lock Picking 101",
-    facebook: "#",
-    linkedIn: "#",
-    twitter: "#",
+    name: "Seif Hateb",
+    profession: "Security Architect (12+ Years of Experience) with success in guiding design, testing, and implementation of leading-edge technology solutions.",
+    img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752673/infosecweek_site/speakers/1633552821677_mv7qbo.jpg",
+    activity: "Conference : How to secure 5G networks",
   },
   {
     id: 2,
-    name: "Hania Mennad",
-    profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "/public/assets/logo/Vector-1.svg",
-    activity: "Conference: Lock Picking 101",
-    facebook: "#",
-    linkedIn: "#",
-    twitter: "#",
+    name: "Bellal Arezki Mustapha",
+    profession: "Cyber Security Assistant Manager in deloitte ",
+    img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752677/infosecweek_site/speakers/37055938_1982889151742838_4728724276675346432_n_z0tril.jpg",
+    activity: "Conference : Next Generation Security Solutions",
   },
   {
     id: 3,
-    name: "Walid Berrouk",
-    profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "/public/assets/logo/Vector-1.svg",
-    activity: "Conference: Lock Picking 101",
-    facebook: "#",
-    linkedIn: "#",
-    twitter: "#",
+    name: "Amine Merzouk",
+    profession: "PhD Student in Adversarial Machine Learning Teacher at Polytechnique Montréal and Research at IMT Atlantique, France",
+    img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752675/infosecweek_site/speakers/IMG_20220328_161019_qcnzag.jpg",
+    activity: "Talk : Security Threats on Machine Learning",
   },
   {
     id: 4,
-    name: "Sami Bouchbout",
-    profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "/public/assets/logo/Vector-1.svg",
-    activity: "Conference: Lock Picking 101",
-    facebook: "#",
-    linkedIn: "#",
-    twitter: "#",
+    name: "Nasreddine Bencherchali",
+    profession: "Detection Engineer, Threat Hunter and Security Researcher",
+    img_url: "",
+    activity: "Talk : LOLBIN’s! What, How and Why",
   },
   {
     id: 5,
-    name: "balaaa blaaaaaaa",
-    profession: "Computer Systems Engineer, with A Keen Interest In Security",
-    img_url: "/public/assets/logo/Vector-1.svg",
-    activity: "Conference: Lock Picking 101",
-    facebook: "#",
-    linkedIn: "#",
-    twitter: "#",
+    name: "Meriem Laroui",
+    profession: "Cyber Security Consultant at KPMG",
+    img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752705/infosecweek_site/speakers/IMG_20220131_200308_hjkbe8.jpg",
+    activity: "Conference : Data Breaches",
   },
 ];
 
@@ -73,33 +58,12 @@ ${speakers
                 >
                     ${speaker.profession}
                  </p>
-                <a href=${speaker.facebook}>
-                    <img
-                    src="/public/assets/logo/Vector-1.svg"
-                    alt="facebook"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                    />
-                </a>
-                <a href=${speaker.twitter}>
-                    <img
-                    src="/public/assets/logo/Vector.svg"
-                    alt="twiter"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                    />
-                </a>
-                <a href=${speaker.linkedIn}>
-                    <img
-                    src="/public/assets/logo/Vector-2.svg"
-                    alt="LinkedIn"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                    />
-                </a>
             </div>
         <div
         class="speaker-img w-[calc(200px+4vw)] md:h-[290px] lg:h-[320px] md:mx-0 h-64 lg:mx-12 ml-20 mb-16 md:mb-0 self-center"
         >
             <img
-                src="/public/assets/speakers/speaker.png"
+                src=${speaker.img_url}
                 alt="speaker.png"
                 class="w-full h-full object-cover"
             />
