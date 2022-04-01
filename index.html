@@ -443,55 +443,64 @@
 
     <!-- Contact Form -->
     <div id="contact-form" class="contact-form w-full h-full overflow-hidden flex items-center flex-col isolate pt-32 pb-32">
-      <p
-        class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-16"
-      >
+      <p class="speakers-title text-white font-righteous font-normal text-[calc(28px+1.3vw)] relative mb-16">
         Contact
       </p>
-      <div id="sendmessage">Your message has been sent. Thank you!</div>
-      <div id="errormessage">An Error happened while trying to send your message :(</div>
-      <form
-        action="https://script.google.com/a/macros/esi.dz/s/AKfycbx6bOkhFIsfNlIJ96ReJKe83QMLa1nsDZPCOlzWKTRebU7Nt5N5lyub4xvB85sTwB7H/exec" method="post" role="form"
-        class=" gform contactForm flex flex-col gap-7 w-3/4 items-center text-white md:text-xl text-lg"
-      >
-        <div
-          class="name-email flex md:flex-row flex-col justify-between h-20 w-full"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            class="name-form pl-5 md:w-45/100 w-full md:mb-0 mb-6"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            class="email-form pl-5 md:w-45/100 w-full h-full"
-          />
-        </div>
-        <input
-          type="text"
-          name="subject"
-          class="subject-form pl-5 w-full h-20"
-          placeholder="Subject"
-        />
-        <textarea
-          name="message"
-          class="message-form h-48 pl-5 pt-2 w-full mb-6"
-          placeholder="Message"
-        ></textarea>
-        <button type="submit" class="submit-form px-16 py-4 rounded-full" type="submit"
-        data-callback='onSubmit' 
-        data-action="submit" 
-        class="g-recaptcha" 
-        data-sitekey="6LfuOzcfAAAAAIupql8AcpHxkHrFv3qyBmAiYB2u">
-          Send
-        </button>
-      </form>
-
-
       
+        <!-- <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage">An Error happened while trying to send your message :(</div> -->
+        <form
+          action="https://script.google.com/a/macros/esi.dz/s/AKfycbx6bOkhFIsfNlIJ96ReJKe83QMLa1nsDZPCOlzWKTRebU7Nt5N5lyub4xvB85sTwB7H/exec" method="post" role="form"
+          class=" gform contactForm flex flex-col gap-7 w-3/4 items-center text-white md:text-xl text-lg"
+        >
+          <div
+            class="name-email flex md:flex-row flex-col justify-between h-20 w-full"
+          >
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="form-control name-form pl-5 md:w-45/100 w-full md:mb-0 mb-6"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars" 
+            />
+            <div class="validation"></div>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              class="form-control email-form pl-5 md:w-45/100 w-full h-full"
+              data-rule="email" data-msg="Please enter a valid email"
+            />
+            <div class="validation"></div>
+          </div>
+          <input
+            id="subject"
+            type="text"
+            name="subject"
+            class="form-control subject-form pl-5 w-full h-20"
+            data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
+            placeholder="Subject"
+          />
+          <div class="validation"></div>
+          <textarea
+            name="message"
+            class="form-control message-form h-48 pl-5 pt-2 w-full mb-6"
+            data-rule="required" data-msg="Please write something for us"
+            placeholder="Message"
+          ></textarea>
+          <div class="validation"></div>
+          <button type="submit" class="submit-form px-16 py-4 rounded-full" type="submit"
+          data-callback='onSubmit' 
+          data-action="submit" 
+          class="g-recaptcha" 
+          data-sitekey="6LfuOzcfAAAAAIupql8AcpHxkHrFv3qyBmAiYB2u">
+            Send
+          </button>
+        </form>
+    </div>
+
     <!-- END OF CONTACT FORM  -->
 
     <!-- footer section -->
@@ -614,6 +623,7 @@
     </footer>
     <!-- End of Footer Section -->
 
+    <script src="/scripts/contactform.js"></script>
     <script src="/scripts/Countdown.js"></script>
     <script src="/scripts/speakers.js"></script>
     <script src="/scripts/agenda.js"></script>
