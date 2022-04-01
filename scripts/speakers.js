@@ -16,7 +16,7 @@ const speakers = [
   {
     id: 3,
     name: "Amine Merzouk",
-    profession: "PhD Student in Adversarial Machine Learning, a Teacher at Polytechnique Montréal and a Researcher at IMT Atlantique, France",
+    profession: "PhD Student in Adversarial Machine Learning and a Teaching Assistant at Polytechnique Montréal",
     img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648752675/infosecweek_site/speakers/IMG_20220328_161019_qcnzag.jpg",
     activity: "Talk : Security Threats on Machine Learning",
   },
@@ -24,7 +24,7 @@ const speakers = [
     id: 4,
     name: "Nasreddine Bencherchali",
     profession: "Detection Engineer, Threat Hunter and Security Researcher",
-    img_url: "",
+    img_url: "https://res.cloudinary.com/shellmates-club/image/upload/v1648830846/infosecweek_site/speakers/Nasreddine_Bencherchali_whvhpx.jpg",
     activity: "Talk : LOLBIN’s! What, How and Why",
   },
   {
