@@ -110,6 +110,12 @@
   font-size: 30px;
 }
 
+.newsletter-form {
+  background-color: #a3770da6;
+  color: #00172a;
+  font-family: "Righteous", cursive;
+}
+
 .footer {
   background-color: #00172a;
 }

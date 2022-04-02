@@ -616,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
@@ -974,6 +978,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1252,6 +1261,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #00172a;
   font-family: "Righteous", cursive;
   font-size: 30px;
+}
+
+.newsletter-form {
+  background-color: #a3770da6;
+  color: #00172a;
+  font-family: "Righteous", cursive;
 }
 
 .footer {
