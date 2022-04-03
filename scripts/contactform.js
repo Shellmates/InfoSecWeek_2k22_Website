@@ -110,4 +110,3 @@ function onSubmit() {
       });
       return false;
   }
-  

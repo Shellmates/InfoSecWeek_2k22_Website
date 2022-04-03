@@ -652,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 5rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .block{
   display: block;
 }
@@ -1401,6 +1405,44 @@ body {
   transition: 0.3s all;
 }
 
+/* Form validation */
+
+#contact-form .form #sendmessage {
+  color: #066742;
+  border: 1px solid #066742;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #sendmessage.show,
+  #contact-form .form #errormessage.show,
+  #contact-form .form .show {
+  display: block;
+}
+
+#contact-form .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* End form Validation */
+
 .hover\:bg-\[\#A3770D\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(163 119 13 / var(--tw-bg-opacity));
@@ -1518,6 +1560,10 @@ body {
 
   .md\:h-\[290px\]{
     height: 290px;
+  }
+
+  .md\:h-full{
+    height: 100%;
   }
 
   .md\:max-w-screen-md{
