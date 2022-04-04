@@ -241,13 +241,14 @@
   /* Form validation */
 
   #contact-form .form #sendmessage {
-    color: #066742;
-    border: 1px solid #066742;
+    color: #A3770D;
+    border: 1px solid #A3770D;
     display: none;
     text-align: center;
     padding: 15px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    width: 75%;
   }
   
   #contact-form .form #errormessage {
